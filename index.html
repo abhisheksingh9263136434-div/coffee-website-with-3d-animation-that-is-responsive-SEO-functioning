@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma & Bean | Premium Coffee Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">Brewing Perfection...</div>
+    </div>
+
+    <nav>
+        <div class="logo">AROMA & BEAN</div>
+        <div class="menu-items">
+            <a href="#hero">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact" class="btn-outline">Contact</a>
+        </div>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <div class="hero-content">
+            <h1>Awaken Your <br><span class="highlight">Senses</span></h1>
+            <p>Experience the finest blend of craftsmanship and nature in every cup.</p>
+            <button id="cta-btn" class="btn-primary">Explore Beans</button>
+        </div>
+        <div id="canvas-container"></div> <!-- Three.js output here -->
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <section id="menu">
+        <div class="section-header">
+            <h2>Curated Selection</h2>
+            <p>Sourced from the best farms worldwide.</p>
+        </div>
+        <div class="products-grid" id="products-container">
+            <!-- Dynamic content loaded via JS -->
+            <div class="loading-products">Loading fresh brews...</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>The Art of Roasting</h2>
+                <p>We believe coffee is more than just a drink; it's a ritual. Our master roasters carefully select specific beans to create unique flavor profiles that tell a story.</p>
+                <button class="btn-text">Read Our Story &rarr;</button>
+            </div>
+            <div class="about-image">
+                <div class="image-wrapper reveal-image">
+<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" alt="Coffee Roasting" class="mock-image" style="width:100%; height:100%; object-fit:cover; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Aroma & Bean</h3>
+                <p>Crafting moments since 2010.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <a href="#">Shop</a>
+                <a href="#">Subscription</a>
+                <a href="#">Wholesale</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Aroma & Bean. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
